@@ -33,7 +33,19 @@ const Chat = ({ socket, userName, room }) => {
       </div>
       <div className="chat-body">
         {messageList.map((message) => {
-          return <h1>{message.message}</h1>;
+          return (
+            <div className="message">
+              <div>
+                <div className="message-content">
+                  <p>{message.message}</p>
+                </div>
+                <div className="message-meta">
+                  <p>{message.time}</p>
+                  <p>{message.userName}</p>
+                </div>
+              </div>
+            </div>
+          );
         })}
       </div>
       <div className="chat-footer">
