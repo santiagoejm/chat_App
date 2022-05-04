@@ -34,14 +34,17 @@ const Chat = ({ socket, userName, room }) => {
       <div className="chat-body">
         {messageList.map((message) => {
           return (
-            <div className="message">
+            <div
+              className="message"
+              id={userName === message.userName ? "you" : "other"}
+            >
               <div>
                 <div className="message-content">
                   <p>{message.message}</p>
                 </div>
                 <div className="message-meta">
-                  <p>{message.time}</p>
-                  <p>{message.userName}</p>
+                  <p id="time">{message.time}</p>
+                  <p id="author">{message.userName}</p>
                 </div>
               </div>
             </div>
