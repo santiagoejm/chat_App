@@ -12,7 +12,7 @@ It's use is very simple, we are all familiarized with any other chat, the user m
 
 ## Future Functionality to Implement
 
-- Implement an authentication and authorization panel to access the app.
+- Implement an `authentication and authorization` panel to access the app.
 - Create a bigger interface, where the user can switch and navigate between rooms, without losing the messages that already exists in them, creating a notification effect, that is triggered once a new message is received.
 - Go Live once the auth proccess is finish.
 
@@ -24,3 +24,5 @@ It's use is very simple, we are all familiarized with any other chat, the user m
 - you are good to go.
 
 ## Live Demo
+
+No at the moment
